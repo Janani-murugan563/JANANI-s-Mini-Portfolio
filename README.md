@@ -1,47 +1,289 @@
-🌐 Janani's Personal Portfolio
-A visually engaging and organized portfolio built using HTML5 and CSS3, designed to highlight my journey as a B.Tech student in Artificial Intelligence and Data Science. This project combines technical clarity with creative design, allowing visitors to easily explore my achievements, skills, and professional story.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Janani's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom right, #e3f2fd, #fce4ec);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background: #1e1e1e;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #00bcd4;
+    }
+    section {
+      padding: 50px 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .home {
+      background: radial-gradient(circle at center, #0288d1, #00acc1);
+      color: white;
+      text-align: center;
+      border-radius: 10px;
+    }
+    .profile-photo {
+      width: 270px;
+      height: 300px;
+      border: 5px solid #fff;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    .education, .projects, .contact, .certificates,.Hands-On{
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(161, 64, 64, 0.1);
+      border-radius: 8px;
+      margin-top: 30px;
+      font-size: 17px;
+    }
+    .projects .project, .certificates .certificate ,.Hands-On{
+      margin-bottom: 25px;
+    }
+    .projects h3, .certificates h3 ,.Hands-On h3{
+      color: #b70d8a;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+    }
+    .contact input, .contact button {
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .contact button {
+      background-color: #3709e1;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .contact button:hover {
+      background-color: #3709e1
+    }
+    .certificates a,.Hands-On a {
+      text-decoration: none;
+      color: #b2b500;
+      font-weight: bold;
+    }
+    h1 {
+        font-size: 36px;
+        margin-top: 20px;
+        color:#d708b8;
+    }
+        .roadmap {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .language {
+            background: #ffffff; /* Blue background for the inner box */
+            color: black;
+            padding: 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, background 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .language:hover {
+            transform: scale(1.1);
+            background: #0056b3; /* Darker blue on hover */
+        }
+        .language a {
+            text-decoration: none;
+            color: black; /* White text to match the inner box */
+        }
+        .icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+  </style>
+</head>
+<body>
 
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#Hands-On ">Hands-On</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+    </ul>
+  </nav>
 
-📸 Website Overview
-This mini portfolio is divided into clear, navigable sections: | Section        | Purpose & Highlights | | 🏠 Home       | Features a welcoming introduction with your name, title, and a placeholder for your professional photo. Sets the tone with a short bio and design aesthetic that reflects your personality. | | 👩‍🎓 About Me   | Outlines your academic journey at Rajalakshmi Institute of Technology and key achievements like internships, hackathons, and coding platforms. Provides context for your professional growth. | | 💻 Projects    | Showcases three major projects from AI, PowerBI, and Python domains. Each includes a name, brief description, and purpose—highlighting your technical versatility. | | ✉️ Contact Me | Interactive form that allows visitors to get in touch. Includes input fields for name, email, and a submit button. Encourages collaboration and networking. | | 📄 Certificates | Dedicated space to display multiple certification achievements. Includes mini navigation boxes for quick access to each certificate with external links for validation. | | 🔗 Connect & Links | External links to your LinkedIn and GitHub profiles for deeper insights into your skills and contributions. Helps build trust and professional visibility. |
+  <!-- Home -->
+  <section id="home" class="home">
+    <img src="c:\Users\janan\Downloads\WhatsApp Image 2025-07-17 at 23.04.05_ce73eb21 - Copy.jpg" alt="Professional Photo" class="profile-photo" />
+    <h1>Janani Murugan</h1>
+    <h2>AI & Data Science Student | Aspiring Intern</h2>
+    <p>Aspiring AI & Data Science Innovator  Passionate Developer & Problem Solver
+Currently pursuing Artificial Intelligence & Data Science (AIDS) at Rajalakshmi Institute of Technology (2024-2028), I am driven by a deep enthusiasm for technology and innovation. With certifications in C, Python, and Java, I have built a strong foundation in programming and problem-solving.</p>
+  </section>
 
-📁 Features
-- 🏠 Home: Profile photo, name, and professional intro
-- 👩‍🎓 About: Education background and internship experience
-- 💻 Projects: Highlights of 3 key projects (AI, PowerBI, Python)
-- ✉️ Contact: Simple form with name, email, and submit button
-- 📄 Certificates: Mini navigation box to access multiple certifications
-- 🔗 External Links: GitHub, LinkedIn, and certificate hosting
-🛠 Technologies Used
-- HTML5 for structure
-- CSS3 for design and responsiveness
-- Google Fonts for modern typography
-📌 How to Use
-- Clone the repository or download the files
-- Open portfolio.html in any browser
-- Replace placeholder image and certificate links with your own
-- Customize projects and experience as needed
+  <!-- About -->
+  <section id="about" class="education">
+    <h2>About Me</h2>
+    <p><strong>Education:</strong> B.Tech in AI & Data Science (2024–2028) – Rajalakshmi Institute of Technology, Chennai</p>
+    <p><strong>Experience:</strong> 1M1B Member
+        .CodSoft Internship
+        ,Hackathons
+        ,CodeChef Silver Badge
+        ,1000+ Skillrack problems</p>
+    <p><strong>CGPA:</strong>8.72</p>
+    <p><strong>Gender:</strong>Female</p>
+    <p><strong>Domain:</strong>Python Developer and Web developer</p>
+    <p><strong>Contact:</strong>90032xxxxx</p>
+    <p><strong>Gmail:</strong>janani563@gmail.com</p>
+  </section>
 
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+    <div class="project">
+      <h3>FinTrend</h3>
+      <p>An AI-powered budget assistant that promotes savings through gamification.</p>
+    </div>
+    <div class="project">
+      <h3>PowerBI Sustainability Dashboard</h3>
+      <p>Created in the 1M1B Internship to visualize climate-friendly lifestyle data.</p>
+    </div>
+    <div class="project">
+      <h3>Hangman Game in Python</h3>
+      <p>A console-based interactive game showcasing Python logic and gameplay design.</p>
+    </div>
+  </section>
 
-🛠 Technologies Used
-- HTML5: Semantic structure for clean and accessible markup
-- CSS3: Gradient backgrounds, modern typography (Poppins), and responsive design
-- Google Fonts: Typography that enhances readability and aesthetic
-- Responsive Layout (optional expansion): Prepared for future mobile optimization and media queries
+  <!-- Contact -->
+  
+  <section id="Hands-On " class="Hands-On">
+    <h2>Hands-On </h2>
+    <div class="Hands-On ">
+        <h3>LinkedIn</h3>
+        <p><a href="https://www.linkedin.com/in/jananimurugan563?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="blank">Link</a></p>
+    </div>
+    <div class="Hands-On ">
+        <h3>SkillRack</h3>
+        <p><a href="http://www.skillrack.com/profile/520242/8a4668cd5055397f84b6e0a148dfc87b0cf7ecbc" target="blank">Link</a></p>
+    </div>
+    <div class="Hands-On ">
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/Janani-murugan563" target="blank">Link</a></p>
+    </div>
+    <div class="Hands-On ">
+        <h3>CodeChef</h3>
+        <p><a href="https://www.codechef.com/users/janani563" target="blank">Link</a></p>
+    </div>
+    <div class="Hands-On ">
+        <h3>SaleForce</h3>
+        <p><a href="https://www.salesforce.com/trailblazer/l5o92w4j8yrlct5d0g" target="blank">Link</a></p>
+    </div>
 
-📁 How to Use
-- Clone or download the repository.
-- Open portfolio.html in your browser to preview.
-- Replace:
-- "photo-placeholder.jpg" with your actual profile photo.
-- Certificate links (https://...) with real URLs.
-- GitHub/LinkedIn links with your profiles.
-- You can also split sections into multiple files (like certificates.html) for better scalability.
+  </section>
 
-✨ Future Enhancements
-- 💡 Add JavaScript scroll animations or theme toggles
-- 📱 Make layout mobile-friendly with Flexbox or media queries
-- 🏁 Deploy on GitHub Pages or Netlify for live access
-- 💬 Integrate contact form with email API or Firebase
+  <!-- Certificates -->
+  <section id="certificates" class="certificates">
+    <h2>Certificates</h2>
+    <div class="certificate">
+      <h3>IBM</h3>
+      <p><a href="https://drive.google.com/file/d/1XQXsUg_3n84KTOQqf6DmXUCjz2ZmFP1r/view?usp=sharing" target="blank">Certificate</a></p>
+    </div>
+    <div class="certificate">
+      <h3>1M1B</h3>
+      <p><a href="https://drive.google.com/file/d/1SENlFGs1dB39z4l6suqCv0I65-c-iyLD/view?usp=sharing" target="blank">Certificate</a></p>
+    </div>
+    <div class="certificate">
+      <h3>Codsoft Intern</h3>
+      <p><a href="https://drive.google.com/file/d/1emh4gn-J7xENa2pfWZJ7TX0xrUQz3J0B/view?usp=sharing" target="blank">Certificate</a></p>
+    </div>
+    <div class="certificate">
+      <h3>Cognifyz Intern</h3>
+      <p><a href="https://drive.google.com/file/d/1Swv6Zncw4zPHXYdjeVbgpM-ZFkxloto6/view?usp=sharing" target="blank">Certificate</a></p>
+    </div>
+    <div class="certificate">
+      <h3>JANbot</h3>
+      <p><a href="https://drive.google.com/file/d/12sbPJ91GoW4KjCySIGeH8caF-RHN58H9/view?usp=sharing" target="blank">Certificate</a></p>
+    </div>
+    <div class="certificate">
+      <h3>MANGO DB </h3>
+      <p><a href="https://drive.google.com/file/d/1vfn1vqQJe_FjODAsHC8U6R-k_YJ7dgl8/view?usp=sharing" target="blank">Certificate</a></p>
+    </div>
+    <div class="certificate">
+      <h3>SKILLQUEST</h3>
+      <p><a href="https://drive.google.com/file/d/1ltxR83IyGKOFirAVlhzrFTKwwr9n--br/view?usp=sharing" target="blank">Certificate</a></p>
+    </div>
+    <div class="certificate">
+      <h3>UI/UX</h3>
+      <p><a href="https://drive.google.com/file/d/1PRstFCXtFTPnGQTELlD2SITpvXrOiLln/view?usp=sharing" target="blank">Certificate</a></p>
+    </div>
+    <div class="certificate">
+      <h3>IV</h3>
+      <p><a href="https://drive.google.com/file/d/1olcvzNSEfQjYfz73ab9ApkaIEkTpTXq-/view?usp=sharing" target="blank">Certificate</a></p>
+    </div>
+</div>
+    <!-- Add more certificates as needed -->
+  </section>
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="contact number">Contact Number:</label>
+      <input type="number" id="contact number" name="contact number" required />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
-If you'd like me to generate this as a real markdown file, or want help converting this into a GitHub-ready README template with badges, I’d be thrilled to! Let's polish your presentation to perfection ✨
+</body>
+</html>
+
