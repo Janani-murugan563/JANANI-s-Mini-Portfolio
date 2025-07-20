@@ -1,4 +1,4 @@
-zxuk 🌐 Janani's Personal Portfolio  
+🌐 Janani's Personal Portfolio  
 A visually engaging and organized portfolio built using *HTML5* and *CSS3*, designed to highlight my journey as a B.Tech student in Artificial Intelligence and Data Science. This project combines technical clarity with creative design, allowing visitors to easily explore my achievements, skills, and professional story.
 
 ---
